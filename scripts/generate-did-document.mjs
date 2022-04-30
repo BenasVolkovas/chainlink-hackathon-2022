@@ -15,6 +15,6 @@ const provider = new Ed25519Provider(seed);
 const did = new DID({ provider, resolver: KeyResolver.getResolver() });
 await did.authenticate();
 
-didDocTemplate["keyAgreement"] = [did.id];
+didDocTemplate["controller"] = did.id;
 
 console.log(JSON.stringify(didDocTemplate, null, 2));
