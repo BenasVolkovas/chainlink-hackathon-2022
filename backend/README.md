@@ -15,11 +15,5 @@ Save this seed as `KEY_SEED`. This is the seed of the key pair used by the servi
 This command will generate the DID document to be published.
 
 ```
-node scripts/generate-did-document.mjs > ./static/.well-known/did.json
-```
-
-## Publish DID Document
-
-```
-yarn moralis-admin-cli deploy -p static
+node scripts/generate-did-document.mjs > ./public/.well-known/did.json
 ```
